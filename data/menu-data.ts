@@ -5,19 +5,19 @@ type menuLinkType = {
 
 export const menuLinks: menuLinkType[] = [
   {
-    title: "A Propos",
+    title: "A PROPOS",
     url: "/a-propos",
   },
   {
-    title: "Ecouter",
+    title: "ECOUTER",
     url: "/écouter",
   },
   {
-    title: "Histoire",
+    title: "HISTOIRE",
     url: "/histoire",
   },
   {
-    title: "galerie",
+    title: "GALERIES",
     url: "/galeries",
   },
 ];

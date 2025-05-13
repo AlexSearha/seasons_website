@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { geistMono, geistSans } from "@/Fonts/Fonts";
+import { ebGarmond, girassol } from "@/Fonts/Fonts";
 
 export const metadata: Metadata = {
   title: "Seasons Novel | GUERRE",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${girassol.variable} ${ebGarmond.variable} antialiased`}
       >
         {children}
       </body>

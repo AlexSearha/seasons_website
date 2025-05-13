@@ -1,11 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { EB_Garamond, Girassol } from "next/font/google";
 
-export const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const girassol = Girassol({
+  variable: "--font-girassol-title",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const ebGarmond = EB_Garamond({
+  variable: "--font-eb_garmond-mono",
   subsets: ["latin"],
+  weight: ["400", "600", "800"],
 });
