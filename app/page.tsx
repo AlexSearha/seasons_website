@@ -1,3 +1,4 @@
+import Footer from "./Layout/Footer";
 import Menu from "./Layout/Menu";
 
 export default function Home() {
@@ -12,9 +13,7 @@ export default function Home() {
         </div>
       </section>
       <section className="h-screen">coucou michel</section>
-      <section id="footer" className="h-60 bg-foreground">
-        hey
-      </section>
+      <Footer />
     </>
   );
 }
