@@ -1,4 +1,5 @@
 import APropos from "./Layout/APropos";
+import Contact from "./Layout/Contact";
 import Ecouter from "./Layout/Ecouter";
 import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
@@ -13,6 +14,7 @@ function Main() {
           <Projet />
           <APropos />
           <Ecouter />
+          <Contact />
         </div>
       </main>
       <Footer />

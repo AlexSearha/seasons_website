@@ -13,10 +13,10 @@ export const menuLinks: menuLinkType[] = [
     title: "écouter",
     url: "/#ecouter",
   },
-  {
-    title: "Histoire",
-    url: "/#histoire",
-  },
+  // {
+  //   title: "Histoire",
+  //   url: "/#histoire",
+  // },
   {
     title: "groupe",
     url: "/#groupe",

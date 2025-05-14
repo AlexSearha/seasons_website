@@ -10,7 +10,9 @@ export type ButtonProps = {
   title: string;
   href?: string;
   target?: boolean;
+  icon?: IconDefinition;
   classSup?: string;
+  dark?: boolean;
 };
 
 export type socialLink = {
