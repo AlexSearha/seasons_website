@@ -1,5 +1,7 @@
 "use client";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Button from "../Components/Button";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 type Inputs = {
   example: string;
@@ -26,19 +28,29 @@ export default function Contact() {
       <h1>Contact</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          placeholder="yolo 1"
-          defaultValue="test"
-          {...register("example")}
+          placeholder="Nom"
+          type="text"
+          {...(register("example"), { required: true })}
         />
 
         <input
-          placeholder="yolo 2"
+          placeholder="email"
+          type="email"
           {...register("exampleRequired", { required: true })}
         />
-        {/* errors will return when field validation fails  */}
-        {errors.exampleRequired && <span>This field is required</span>}
 
-        <input type="submit" />
+        <input
+          placeholder="Message"
+          type="text"
+          {...register("exampleRequired", { required: true })}
+        />
+
+        {/* errors will return when field validation fails  */}
+        {errors.exampleRequired && (
+          <span className="italic text-red-600">Ce champ est requis</span>
+        )}
+
+        <Button type="submit" title="Envoyer" icon={faPaperPlane} dark />
       </form>
     </section>
   );
