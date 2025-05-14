@@ -5,19 +5,31 @@ type menuLinkType = {
 
 export const menuLinks: menuLinkType[] = [
   {
-    title: "A PROPOS",
-    url: "/a-propos",
+    title: "À propos",
+    url: "/#a-propos",
   },
   {
-    title: "ECOUTER",
-    url: "/écouter",
+    title: "projet",
+    url: "/#ecouter",
   },
   {
-    title: "HISTOIRE",
-    url: "/histoire",
+    title: "écouter",
+    url: "/#ecouter",
   },
   {
-    title: "GALERIES",
-    url: "/galeries",
+    title: "Histoire",
+    url: "/#histoire",
+  },
+  {
+    title: "groupe",
+    url: "/#groupe",
+  },
+  {
+    title: "evenements",
+    url: "/#evenements",
+  },
+  {
+    title: "contact",
+    url: "/#contact",
   },
 ];

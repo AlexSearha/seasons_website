@@ -1,19 +1,21 @@
+import APropos from "./Layout/APropos";
 import Footer from "./Layout/Footer";
-import Menu from "./Layout/Menu";
+import Header from "./Layout/Header";
+import Projet from "./Layout/Projet";
 
-export default function Home() {
+function Main() {
   return (
     <>
-      <section className="h-screen bg-[url(/background.png)] bg-center bg-cover relative">
-        <div
-          id="bg-overlay"
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 from-5% via-transparent via-85%"
-        >
-          <Menu />
+      <Header />
+      <main id="main" className="flex justify-center py-15">
+        <div id="main-content" className="max-w-7xl w-full">
+          <APropos />
+          <Projet />
         </div>
-      </section>
-      <section className="h-screen">coucou michel</section>
+      </main>
       <Footer />
     </>
   );
 }
+
+export default Main;

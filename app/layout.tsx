@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ebGarmond, girassol } from "@/Fonts/Fonts";
+import ButtonHome from "./Components/ButtonHome";
 
 export const metadata: Metadata = {
   title: "Seasons Novel | GUERRE",
@@ -16,9 +17,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body
-        className={`${girassol.variable} ${ebGarmond.variable} antialiased`}
+        className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}
       >
         {children}
+        <ButtonHome />
       </body>
     </html>
   );

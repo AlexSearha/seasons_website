@@ -6,7 +6,7 @@ const Socials = () => {
   return (
     <div
       id="socials"
-      className="flex gap-6 h-5 text-amber-100 text-3xl items-center"
+      className="flex gap-6 text-amber-100 text-3xl items-center"
     >
       {socialsLinks.map((socialsLink, index) => {
         return (
@@ -18,6 +18,7 @@ const Socials = () => {
           >
             <FontAwesomeIcon
               icon={socialsLink.icon}
+              size="xs"
               className="text-amber-100 hover:text-amber-300 duration-300 transition h-full"
             />
           </Link>

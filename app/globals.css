@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #edcb96;
   --title: #d4bd97;
+  --background: #d4bd97;
   --foreground: #171717;
+  --muted: #472d0f;
+
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-title: var(--title);
+  --color-muted: var(--muted);
   --font-mono: var(--font-eb_garmond-mono);
   --font-title: var(--font-girassol-title);
 }
@@ -27,17 +30,37 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-text-title);
   font-family: var(--font-girassol-title);
-  text-transform: uppercase;
 }
+
+.h-title {
+  font-family: var(--font-girassol-title);
+  /* text-transform: uppercase; */
+}
+
 
 h1 {
   font-size: 4rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.2rem;
 }
 
 body {
