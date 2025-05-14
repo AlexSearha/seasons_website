@@ -1,16 +1,10 @@
+import { socialLink } from "@/@types/types_d";
 import {
   faBandcamp,
   faFacebook,
   faInstagram,
   faYoutube,
-  IconDefinition,
 } from "@fortawesome/free-brands-svg-icons";
-
-type socialLink = {
-  url: string;
-  icon: IconDefinition;
-  target: boolean;
-};
 
 export const socialsLinks: socialLink[] = [
   {

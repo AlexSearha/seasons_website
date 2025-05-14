@@ -1,16 +1,13 @@
-type menuLinkType = {
-  title: string;
-  url: string;
-};
+import { menuLinkType } from "@/@types/types_d";
 
 export const menuLinks: menuLinkType[] = [
   {
-    title: "À propos",
-    url: "/#a-propos",
-  },
-  {
     title: "projet",
     url: "/#ecouter",
+  },
+  {
+    title: "À propos",
+    url: "/#a-propos",
   },
   {
     title: "écouter",

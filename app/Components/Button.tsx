@@ -1,12 +1,5 @@
+import { ButtonProps } from "@/@types/types_d";
 import Link from "next/link";
-
-type ButtonProps = {
-  type?: "button" | "submit" | "reset";
-  title: string;
-  href?: string;
-  target?: boolean;
-  classSup?: string;
-};
 
 const Button = ({
   type = "button",

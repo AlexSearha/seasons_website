@@ -19,12 +19,18 @@ const Header = () => {
               <p className="md:text-[18rem]">1871</p>
               <h1 className="-mt-10 uppercase">Les cendres et le sang</h1>
               <p className="bg-black/10 rounded-3xl p-10 text-lg md:text-2xl text-justify font-mono text-amber-100 mt-8">
-                {`Ici s’élève la voix des oubliés, des insurgés qu’on a voulu
-                faire taire à coups de canons. Ce projet musical est un cri : celui d’un
-                peuple en lutte, d’hommes et de femmes qui ont dressé des
-                barricades contre l’injustice. Porté par la musique et la
-                puissance du récit, ce voyage musical ranime les braises de 1871
-                — là où Paris s’est embrasée pour rêver plus fort.`}
+                Ici résonne la voix d&apos;un témoin. Celle d&apos;un soldat
+                envoyé pour faire taire les insurgés, mais qui, au fil des
+                flammes et des balles, vacille entre devoir et doute.
+                <br />
+                Ce projet musical est un cri — pas celui des vainqueurs, mais
+                celui d&apos;un homme confronté à la guerre fratricide. Porté
+                par la force du récit et la puissance de la musique, ce voyage
+                ranime les braises de 1871,{" "}
+                <span className="font-bold">
+                  là où Paris s&apos;est consumée dans le feu de ses
+                  contradictions.
+                </span>
               </p>
               <Button
                 href="https://www.google.com"
