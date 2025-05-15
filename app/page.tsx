@@ -1,11 +1,12 @@
 import APropos from "./Layout/APropos";
 import Contact from "./Layout/Contact";
 import Ecouter from "./Layout/Ecouter";
+import Evenements from "./Layout/Evenements";
 import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
 import Projet from "./Layout/Projet";
 
-function Main() {
+const Main = () => {
   return (
     <>
       <Header />
@@ -14,12 +15,13 @@ function Main() {
           <Projet />
           <APropos />
           <Ecouter />
+          <Evenements />
           <Contact />
         </div>
       </main>
       <Footer />
     </>
   );
-}
+};
 
 export default Main;

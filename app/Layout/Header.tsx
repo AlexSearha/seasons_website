@@ -16,21 +16,24 @@ const Header = () => {
           <Menu />
           <div className="h-title mt-25 bg-[url(/pattern_old_paper.webp)] bg-clip-text text-transparent bg-cover">
             <div className="flex flex-col items-center w-3/5">
-              <p className="md:text-[18rem]">1871</p>
+              <p className="md:text-[17rem]">1871</p>
               <h1 className="-mt-10 uppercase">Les cendres et le sang</h1>
-              <p className="bg-black/10 rounded-3xl p-10 text-lg md:text-2xl text-justify font-mono text-amber-100 mt-8">
-                Ici résonne la voix d&apos;un témoin. Celle d&apos;un soldat
-                envoyé pour faire taire les insurgés, mais qui, au fil des
-                flammes et des balles, vacille entre devoir et doute.
+              <p className="bg-black/10 rounded-2xl p-8 text-lg md:text-2xl text-justify font-mono text-amber-100 mt-8">
+                <span className="text-5xl">I</span>ci s&apos;élève la voix
+                d&apos;un soldat. Un témoin de l&apos;Histoire qui, malgré le
+                camp qu&apos;il avait choisi, a perçu les voix de celles et ceux
+                qu&apos;on a voulu faire taire à coups de canons.
                 <br />
-                Ce projet musical est un cri — pas celui des vainqueurs, mais
-                celui d&apos;un homme confronté à la guerre fratricide. Porté
-                par la force du récit et la puissance de la musique, ce voyage
-                ranime les braises de 1871,{" "}
-                <span className="font-bold">
-                  là où Paris s&apos;est consumée dans le feu de ses
-                  contradictions.
-                </span>
+                <br />
+                Ce projet est un cri : celui d&apos;un peuple en lutte qui a
+                dressé des barricades, celui d&apos;un homme qu&apos;on a envoyé
+                tuer ses compatriotes.
+                <br />
+                <br />
+                Porté par la force de la musique et l&apos;intensité du récit,
+                ce voyage ranime les braises de{" "}
+                <span className="font-bold text-3xl">1871</span> : la sanglante
+                année où Paris s&apos;est embrasée.
               </p>
               <Button
                 href="https://www.google.com"

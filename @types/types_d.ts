@@ -1,6 +1,6 @@
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
-export type menuLinkType = {
+export type menuLinkProps = {
   title: string;
   url: string;
 };
@@ -15,8 +15,24 @@ export type ButtonProps = {
   dark?: boolean;
 };
 
-export type socialLink = {
+export type socialLinkProps = {
   url: string;
   icon: IconDefinition;
   target: boolean;
+};
+
+export type eventInfoProps = {
+  date: string;
+  nom: string;
+  lieu: string;
+  adresse: string;
+  ville: string;
+  codePostal: string;
+  url: string;
+};
+
+export type ticketProps = {
+  id: number;
+  url: string;
+  isIllustRight: boolean;
 };
