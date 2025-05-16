@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <>
       <Header />
-      <main id="main" className="flex justify-center py-15">
+      <main id="main" className="flex justify-center py-15 bg-title">
         <div id="main-content" className="max-w-7xl w-full">
           <Projet />
           <APropos />
