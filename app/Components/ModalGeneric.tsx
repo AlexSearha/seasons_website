@@ -13,10 +13,9 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    height: '50%',
-    width: '50%',
     backgroundColor: '#d4bd97',
     border: '2px solid #17171777',
+    maxWidth: '70%',
   },
 };
 
