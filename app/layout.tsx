@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ebGarmond, girassol } from '@/Fonts/Fonts';
-import ButtonHome from './Components/ButtonHome';
 
 export const metadata: Metadata = {
   title: 'Seasons Novel | 1871 : Les Cendres et le Sang',
@@ -18,7 +17,6 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth">
       <body id="body" className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}>
         {children}
-        <ButtonHome />
       </body>
     </html>
   );

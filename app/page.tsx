@@ -9,6 +9,8 @@ import Header from './Layout/Header';
 import Projet from './Layout/Projet';
 import ModalGeneric from './Components/ModalGeneric';
 
+import ButtonHome from './Components/ButtonHome';
+
 const Main = () => {
   return (
     <ModalProvider>
@@ -24,6 +26,7 @@ const Main = () => {
       </main>
       <Footer />
       <ModalGeneric />
+      <ButtonHome />
     </ModalProvider>
   );
 };
