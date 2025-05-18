@@ -1,17 +1,19 @@
 'use client';
-import { useContext, useEffect, useState } from 'react';
-import { eventInfoProps, ticketProps } from '@/@types/types_d';
-import { ticketListData } from '@/data/tickets-list-data';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { getTimeDDMMYYYY } from '@/utils/timeUtilsFunctions';
-import { ModalContext } from '@/providers/ModalProviders';
+import { useModal } from '@/providers/ModalProviders';
 import Button from '../Button';
 import TicketModalDetails from './TicketModalDetails';
+// TS Types
+import { eventInfoProps, ticketProps } from '@/@types/types_d';
+import { ticketListData } from '@/data/tickets-list-data';
+import { getTimeDDMMYYYY } from '@/utils/timeUtilsFunctions';
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Ticket = (eventInfos: eventInfoProps) => {
-  const [singleTicket, setSingleTicket] = useState<ticketProps>();
+  const [singleTicket, setSingleTicket] = useState<ticketProps | null>(null);
   const { day, month, year } = getTimeDDMMYYYY(eventInfos.date);
-  const modal = useContext(ModalContext);
+  const modal = useModal();
 
   useEffect(() => {
     const randomNumber = Math.floor(Math.random() * 5) + 1;
@@ -52,8 +54,8 @@ const Ticket = (eventInfos: eventInfoProps) => {
               {/* <Button title="En savoir plus" icon={faSearchPlus} dark classSup="scale-60" /> */}
 
               <Button
-                title="Acheter"
-                icon={singleTicket.icon}
+                title="En savoir plus"
+                icon={faSearchPlus}
                 dark
                 classSup="scale-60"
                 onClick={() => handleOpenModal(eventInfos)}

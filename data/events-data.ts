@@ -8,7 +8,8 @@ export const events = [
     ville: 'Paris',
     codePostal: '75018',
     url: 'https://www.letrianon.fr',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer:
+      'https://valkyrieswebzine.com/wp-content/uploads/2021/06/202165731_1730290667171638_3664229565393114136_n.jpg',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '25€',
@@ -22,7 +23,7 @@ export const events = [
     ville: 'Ramonville-Saint-Agne',
     codePostal: '31520',
     url: 'https://lebikini.com',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer: 'https://www.letrianon.fr/metal-fest',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '23€',
@@ -36,7 +37,7 @@ export const events = [
     ville: 'Clermont-Ferrand',
     codePostal: '63100',
     url: 'https://www.lacoope.org',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer: 'https://www.letrianon.fr/metal-fest',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '25€',
@@ -50,7 +51,7 @@ export const events = [
     ville: 'Cenon',
     codePostal: '33150',
     url: 'https://lerocherdepalmer.fr',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer: 'https://www.letrianon.fr/metal-fest',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '25€',
@@ -64,7 +65,7 @@ export const events = [
     ville: 'Lille',
     codePostal: '59777',
     url: 'https://aeronef.fr',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer: 'https://www.letrianon.fr/metal-fest',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '25€',
@@ -78,7 +79,7 @@ export const events = [
     ville: 'Grenoble',
     codePostal: '38000',
     url: 'https://www.la-belle-electrique.com',
-    fliyer: 'https://www.letrianon.fr/metal-fest',
+    flyer: 'https://www.letrianon.fr/metal-fest',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     prix: '25€',

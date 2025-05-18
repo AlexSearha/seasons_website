@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
-export type menuLinkProps = {
+export type menuLinkType = {
   title: string;
   url: string;
 };
@@ -32,12 +32,11 @@ export type eventInfoProps = {
   codePostal: string;
   url: string;
   description: string;
-  fliyer: string;
+  flyer: string;
   prix: string;
 };
 
 export type ticketProps = {
   id: number;
   url: string;
-  icon: IconDefinition;
 };

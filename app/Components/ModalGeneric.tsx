@@ -1,6 +1,5 @@
 'use client';
-import { useContext } from 'react';
-import { ModalContext } from '@/providers/ModalProviders';
+import { useModal } from '@/providers/ModalProviders';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -22,7 +21,7 @@ const customStyles = {
 };
 
 export default function ModalGeneric() {
-  const modalProps = useContext(ModalContext);
+  const modalProps = useModal();
   return (
     <div id="modal" className="relative">
       <Modal
