@@ -7,12 +7,12 @@ import TicketModalDetails from './TicketModalDetails';
 // TS Types
 import { eventInfoProps, ticketProps } from '@/@types/types_d';
 import { ticketListData } from '@/data/tickets-list-data';
-import { getTimeDDMMYYYY } from '@/utils/timeUtilsFunctions';
+import { getSplitObjectTime } from '@/utils/timeUtilsFunctions';
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Ticket = (eventInfos: eventInfoProps) => {
   const [singleTicket, setSingleTicket] = useState<ticketProps | null>(null);
-  const { day, month, year } = getTimeDDMMYYYY(eventInfos.date);
+  const { day, month, year } = getSplitObjectTime(eventInfos.date);
   const modal = useModal();
 
   useEffect(() => {
