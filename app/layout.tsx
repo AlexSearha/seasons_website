@@ -4,7 +4,7 @@ import { ebGarmond, girassol } from '@/Fonts/Fonts';
 import ButtonHome from './Components/ButtonHome';
 
 export const metadata: Metadata = {
-  title: 'Seasons Novel | GUERRE',
+  title: 'Seasons Novel | 1871 : Les Cendres et le Sang',
   description:
     'Entre tambours de guerre et murmures de doute, une fresque musicale qui donne vie aux cicatrices de l’Histoire.',
 };
