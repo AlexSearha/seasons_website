@@ -25,7 +25,8 @@ export type eventInfoProps = {
   date: string;
   nom: string;
   lieu: string;
-  adresse: string;
+  numeroDeRue: string;
+  rue: string;
   ville: string;
   codePostal: string;
   url: string;
@@ -34,5 +35,4 @@ export type eventInfoProps = {
 export type ticketProps = {
   id: number;
   url: string;
-  isIllustRight: boolean;
 };

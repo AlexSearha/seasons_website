@@ -1,37 +1,23 @@
 export const ticketListData = [
   {
     id: 1,
-    url: "/billetTest.png",
-    isIllustRight: true,
+    url: "/tickets/ticket_canon.webp",
   },
   {
     id: 2,
-    url: "/aristide.webp",
-    isIllustRight: false,
+    url: "/tickets/ticket_chateau_versailles.webp",
   },
   {
     id: 3,
-    url: "/soldats_batail_de_champigny.webp",
-    isIllustRight: true,
+    url: "/tickets/ticket_drapeau.webp",
   },
   {
     id: 4,
-    url: "/billetTest.png",
-    isIllustRight: true,
+    url: "/tickets/ticket_eglise.webp",
   },
   {
     id: 5,
-    url: "/billetTest.png",
-    isIllustRight: true,
+    url: "/tickets/ticket_ruine.webp",
   },
-  {
-    id: 6,
-    url: "/billetTest.png",
-    isIllustRight: true,
-  },
-  {
-    id: 7,
-    url: "/billetTest.png",
-    isIllustRight: true,
-  },
+
 ];
