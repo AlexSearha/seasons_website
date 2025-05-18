@@ -1,11 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --title: #d4bd97;
   --background: #d4bd97;
   --foreground: #171717;
   --muted: #472d0f;
-
 }
 
 @theme inline {
@@ -36,7 +35,6 @@ h6 {
 .h-title {
   font-family: var(--font-girassol-title);
 }
-
 
 h1 {
   font-size: 3.8rem;
@@ -90,4 +88,14 @@ body {
 
 .vertical-timeline {
   padding: 0 !important;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
 }

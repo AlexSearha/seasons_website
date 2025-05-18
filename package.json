@@ -20,6 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.56.3",
+    "react-modal": "^3.16.3",
     "react-vertical-timeline-component": "^3.5.3"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-howler": "^5.2.3",
+    "@types/react-modal": "^3.16.3",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",

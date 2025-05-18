@@ -1,4 +1,4 @@
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 export type menuLinkProps = {
   title: string;
@@ -6,13 +6,14 @@ export type menuLinkProps = {
 };
 
 export type ButtonProps = {
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
   title: string;
   href?: string;
   target?: boolean;
   icon?: IconDefinition;
   classSup?: string;
   dark?: boolean;
+  onClick?: () => void;
 };
 
 export type socialLinkProps = {
@@ -30,9 +31,13 @@ export type eventInfoProps = {
   ville: string;
   codePostal: string;
   url: string;
+  description: string;
+  fliyer: string;
+  prix: string;
 };
 
 export type ticketProps = {
   id: number;
   url: string;
+  icon: IconDefinition;
 };

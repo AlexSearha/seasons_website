@@ -1,10 +1,11 @@
-import { ButtonProps } from "@/@types/types_d";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+import { ButtonProps } from '@/@types/types_d';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 const Button = ({
-  type = "button",
+  type = 'button',
   title,
+  onClick,
   href,
   classSup,
   icon,
@@ -19,8 +20,9 @@ const Button = ({
     return (
       <Link
         href={href}
-        target={target ? "_blank" : undefined}
+        target={target ? '_blank' : undefined}
         className={className}
+        onClick={onClick}
       >
         {title}
       </Link>
@@ -28,7 +30,7 @@ const Button = ({
   }
 
   return (
-    <button type={type} className={className}>
+    <button type={type} className={className} onClick={onClick}>
       {icon && <FontAwesomeIcon icon={icon} className="mr-2" size="sm" />}
       {title}
     </button>
