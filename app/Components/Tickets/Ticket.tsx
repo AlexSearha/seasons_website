@@ -51,8 +51,6 @@ const Ticket = (eventInfos: eventInfoProps) => {
               className="grow flex flex-col items-center justify-around text-shadow-white/80 text-shadow-xs"
             >
               <p className="font-bold text-3xl font-title">{eventInfos.nom}</p>
-              {/* <Button title="En savoir plus" icon={faSearchPlus} dark classSup="scale-60" /> */}
-
               <Button
                 title="En savoir plus"
                 icon={faSearchPlus}
