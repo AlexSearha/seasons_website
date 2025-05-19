@@ -1,12 +1,8 @@
-import type { Metadata } from 'next';
+'use client';
 import './globals.css';
 import { ebGarmond, girassol } from '@/Fonts/Fonts';
-
-export const metadata: Metadata = {
-  title: 'Seasons Novel | 1871 : Les Cendres et le Sang',
-  description:
-    'Entre tambours de guerre et murmures de doute, une fresque musicale qui donne vie aux cicatrices de l’Histoire.',
-};
+import { ModalProvider } from '@/providers/ModalProviders';
+import QueryProvider from '@/providers/QueryProvider';
 
 export default function RootLayout({
   children,
@@ -14,10 +10,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
-      <body id="body" className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}>
-        {children}
-      </body>
-    </html>
+    <ModalProvider>
+      <QueryProvider>
+        <html lang="fr" className="scroll-smooth">
+          <body
+            id="body"
+            className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}
+          >
+            {children}
+          </body>
+        </html>
+      </QueryProvider>
+    </ModalProvider>
   );
 }

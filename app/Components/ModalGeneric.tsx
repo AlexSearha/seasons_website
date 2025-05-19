@@ -1,4 +1,3 @@
-'use client';
 import { useModal } from '@/providers/ModalProviders';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

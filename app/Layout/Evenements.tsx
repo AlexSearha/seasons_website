@@ -10,6 +10,7 @@ const Evenements = () => {
     const currentDate = new Date();
     return eventDate > currentDate;
   });
+
   return (
     <section id="evenements" className="text-foreground flex flex-col gap-4 mb-30">
       <div className="flex justify-arround items-center mb-15">
@@ -39,6 +40,7 @@ const Evenements = () => {
             <div className="flex flex-col items-center justify-center">
               <h3>Nul tambours ne raisonnent pour l&apos;instant</h3>
               <p className="font-mono text-2xl">Ferez-vous appel à notre escouade ?</p>
+
               <div className="mt-3">
                 <Button title="Nous contacter" dark href="/#contact" classSup="scale-75" />
               </div>
