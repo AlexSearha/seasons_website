@@ -13,8 +13,8 @@ const Main = () => {
   return (
     <>
       <Header />
-      <main id="main" className="flex justify-center py-15 bg-title">
-        <div id="main-content" className="max-w-7xl w-full">
+      <main id="main" className="flex justify-center py-15 bg-texture">
+        <div id="main-content" className="max-w-7xl w-full z-10">
           <Projet />
           <APropos />
           <Ecouter />
