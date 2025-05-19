@@ -9,12 +9,6 @@ import Projet from './Layout/Projet';
 import ModalGeneric from './Components/ModalGeneric';
 import ButtonHome from './Components/ButtonHome';
 
-// export const metadata: Metadata = {
-//   title: 'Seasons Novel | 1871 : Les Cendres et le Sang',
-//   description:
-//     'Entre tambours de guerre et murmures de doute, une fresque musicale qui donne vie aux cicatrices de l’Histoire.',
-// };
-
 const Main = () => {
   return (
     <>
