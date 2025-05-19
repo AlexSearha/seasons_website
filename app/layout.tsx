@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
 import './globals.css';
 import { ebGarmond, girassol } from '@/Fonts/Fonts';
+import MainProvider from '@/providers/MainProvider';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Seasons Novel | 1871 : Les Cendres et le Sang',
@@ -14,10 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
-      <body id="body" className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}>
-        {children}
-      </body>
-    </html>
+    <MainProvider>
+      <html lang="fr" className="scroll-smooth">
+        <body
+          id="body"
+          className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}
+        >
+          {children}
+        </body>
+      </html>
+    </MainProvider>
   );
 }

@@ -2,7 +2,7 @@
 
 :root {
   --title: #d4bd97;
-  --background: #d4bd97;
+  --background: #c8a060;
   --foreground: #171717;
   --muted: #472d0f;
 }
@@ -98,4 +98,39 @@ body {
   bottom: 0;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
+}
+
+.bg-texture {
+  position: relative;
+  background-color: var(--background);
+  z-index: 0;
+}
+
+.bg-texture::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url("/textures/light-paper-fibers.png");
+  background-repeat: repeat;
+  filter: brightness(35%);
+  z-index: 50;
+  pointer-events: none;
+}
+
+.bg-texture::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url("/textures/dust.png");
+  background-repeat: repeat;
+  z-index: 99;
+  pointer-events: none;
 }

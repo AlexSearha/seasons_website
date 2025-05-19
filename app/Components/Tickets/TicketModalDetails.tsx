@@ -6,6 +6,7 @@ import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 export default function TicketModalDetails(eventInfos: eventInfoProps) {
   const { day, month, year } = getSplitObjectTime(eventInfos.date);
+
   return (
     <div className="flex h-full gap-10 p-6">
       <img
