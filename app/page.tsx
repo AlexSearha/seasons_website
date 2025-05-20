@@ -11,10 +11,10 @@ import ButtonHome from './Components/ButtonHome';
 
 const Main = () => {
   return (
-    <>
+    <div className="relative z-0">
       <Header />
       <main id="main" className="flex justify-center py-15 bg-texture">
-        <div id="main-content" className="max-w-7xl w-full z-10">
+        <div id="main-content" className="max-w-7xl w-full">
           <Projet />
           <APropos />
           <Ecouter />
@@ -25,7 +25,7 @@ const Main = () => {
       <Footer />
       <ModalGeneric />
       <ButtonHome />
-    </>
+    </div>
   );
 };
 

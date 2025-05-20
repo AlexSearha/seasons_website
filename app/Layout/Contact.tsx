@@ -1,7 +1,8 @@
-"use client";
-import { useForm, SubmitHandler } from "react-hook-form";
-import Button from "../Components/Button";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+'use client';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import Button from '../Components/Button';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { TitleH2 } from '../Components/Titles/Titles';
 
 type Inputs = {
   example: string;
@@ -19,15 +20,12 @@ export default function Contact() {
   const inputClassName = `bg-amber-100 p-4 rounded h-15 text-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground`;
   const labelClassName = `text-xl`;
 
-  console.log(watch("example")); // watch input value by passing the name of it
+  console.log(watch('example')); // watch input value by passing the name of it
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <section
-      id="contact"
-      className="text-foreground font-mono flex flex-col gap-4 mb-30"
-    >
-      <h1>Contact</h1>
+    <section id="contact" className="text-foreground font-mono flex flex-col gap-4 mb-30">
+      <TitleH2 title="Contact" />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <div className="flex gap-2 justify-between">
           <div className="flex flex-col w-1/2">
@@ -39,7 +37,7 @@ export default function Contact() {
               placeholder="Nom"
               type="text"
               className={inputClassName}
-              {...(register("example"), { required: true })}
+              {...(register('example'), { required: true })}
             />
           </div>
 
@@ -52,7 +50,7 @@ export default function Contact() {
               placeholder="Email"
               type="email"
               className={inputClassName}
-              {...register("exampleRequired", { required: true })}
+              {...register('exampleRequired', { required: true })}
             />
           </div>
         </div>
@@ -66,7 +64,7 @@ export default function Contact() {
             placeholder="Sujet"
             type="text"
             className={inputClassName}
-            {...register("exampleRequired", { required: false })}
+            {...register('exampleRequired', { required: false })}
           />
         </div>
 
@@ -78,14 +76,12 @@ export default function Contact() {
             id="message"
             placeholder="Message"
             className={`${inputClassName} h-50 text-xl`}
-            {...register("exampleRequired", { required: true })}
+            {...register('exampleRequired', { required: true })}
           />
         </div>
 
         {/* errors will return when field validation fails  */}
-        {errors.exampleRequired && (
-          <span className="italic text-red-600">Ce champ est requis</span>
-        )}
+        {errors.exampleRequired && <span className="italic text-red-600">Ce champ est requis</span>}
 
         <Button type="submit" title="Envoyer" icon={faPaperPlane} dark />
       </form>
