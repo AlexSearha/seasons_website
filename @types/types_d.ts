@@ -40,3 +40,7 @@ export type ticketProps = {
   id: number;
   url: string;
 };
+
+export type sizeDetectionProps = {
+  limit?: number;
+};

@@ -2,8 +2,8 @@
 
 :root {
   --title: #d4bd97;
-  --background: #c8a060;
-  --foreground: #171717;
+  --background: #DBC8A9;
+  --foreground: #2a1f16;
   --muted: #472d0f;
 }
 
@@ -36,29 +36,6 @@ h6 {
   font-family: var(--font-girassol-title);
 }
 
-h1 {
-  font-size: 3.8rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2.6rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.6rem;
-}
-
-h6 {
-  font-size: 1.2rem;
-}
 
 body {
   background: var(--background);
@@ -104,33 +81,4 @@ body {
   position: relative;
   background-color: var(--background);
   z-index: 0;
-}
-
-.bg-texture::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-image: url("/textures/light-paper-fibers.png");
-  background-repeat: repeat;
-  filter: brightness(35%);
-  z-index: 50;
-  pointer-events: none;
-}
-
-.bg-texture::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-image: url("/textures/dust.png");
-  background-repeat: repeat;
-  z-index: 99;
-  pointer-events: none;
 }
