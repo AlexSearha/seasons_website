@@ -1,4 +1,4 @@
-import Socials from "../Components/Socials";
+import Socials from '../Components/Socials';
 const date = new Date();
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     >
       <h1>SEASONS</h1>
       <Socials />
-      <p className="flex w-full absolute bottom-0 left-0 pb-4 justify-center text-sm text-title/25 italic">
+      <p className="flex w-full absolute bottom-0 left-0 pb-4 justify-center text-sm text-title/35 italic">
         ©{date.getFullYear()} Tous droits réservés
       </p>
     </section>
