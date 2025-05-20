@@ -1,19 +1,20 @@
 'use client';
 import React from 'react';
-import Menu from './MenuDesktop';
 import Button from '../Components/Button';
 import useSizeDetection from '@/hooks/sizeDetect';
+import MenuDesktop from './MenuDesktop';
+import MenuMobile from './MenuMobile';
 
 const Header = () => {
   const isMobileWindowsSize = useSizeDetection({});
   return (
-    <header id="home" className="h-screen bg-[url(/background_1.webp)] bg-center bg-cover relative">
+    <header id="home" className="h-screen bg-[url(/background_1.webp)] bg-center bg-cover ">
       <div
         id="bg-overlay"
         className="absolute flex justify-center top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 from-5% via-transparent via-85%"
       >
         <div className="flex flex-col w-full max-w-7xl">
-          <Menu />
+          {isMobileWindowsSize ? <MenuMobile /> : <MenuDesktop />}
           <div className="h-title mt-0 md:mt-25 bg-[url(/pattern_old_paper.webp)] bg-clip-text text-transparent bg-cover">
             <div className="flex flex-col items-center w-full md:w-3/5 p-4">
               <h1 className="text-[11rem] md:text-[17rem]">1871</h1>
