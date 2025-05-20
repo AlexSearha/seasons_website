@@ -4,13 +4,15 @@ const Projet = () => {
   return (
     <section id="projet" className="text-foreground flex flex-col gap-4 mb-30 px-4 md:px-0">
       <TitleH2 title="le projet" />
-      <p className="font-mono text-2xl text-justify">
+      <p className="font-mono text-lg md:text-2xl text-justify">
         Nous sommes deux créateurs réunis autour d&apos;une passion commune pour la musique, le
         cinéma et les récits. Nous portons ensemble ce projet musical, visuel et narratif inspiré de
         la forme immersive initiée par
         <span className="font-bold italic">&quot;The Inner Path&quot; </span>
         (notre première collaboration). <br />
-        <span className="font-bold text-2xl">&quot;1871 : les cendres et le sang&quot;</span>{' '}
+        <span className="font-bold text-lg md:text-2xl">
+          &quot;1871 : les cendres et le sang&quot;
+        </span>{' '}
         témoigne de l&apos;enchevêtrement de l&apos;Histoire dans nos histoires personnelles.
         <br />
         <br />
