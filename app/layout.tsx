@@ -17,10 +17,7 @@ export default function RootLayout({
   return (
     <MainProvider>
       <html lang="fr" className="scroll-smooth">
-        <body
-          id="body"
-          className={`${girassol.variable} ${ebGarmond.variable} antialiased relative`}
-        >
+        <body id="body" className={`${girassol.variable} ${ebGarmond.variable} antialiased`}>
           {children}
         </body>
       </html>

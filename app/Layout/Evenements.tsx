@@ -3,6 +3,7 @@ import Ticket from '../Components/Tickets/Ticket';
 import moment from 'moment';
 import Image from 'next/image';
 import Button from '../Components/Button';
+import { TitleH2 } from '../Components/Titles/Titles';
 
 const Evenements = () => {
   const filterEventToCome = events.filter((event) => {
@@ -22,7 +23,7 @@ const Evenements = () => {
             height={150}
             width={150}
           />
-          <h1 className="text-center">Evenements</h1>
+          <TitleH2 title="Evenements" />
           <Image
             src="/decoration/trompettes.webp"
             alt="trompettes 1871"

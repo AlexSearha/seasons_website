@@ -6,11 +6,12 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { TitleH2 } from '../Components/Titles/Titles';
 
 const Ecouter = () => {
   return (
-    <section id="ecouter" className="text-foreground font-mono flex flex-col gap-4 mb-60">
-      <h1>Ecouter</h1>
+    <section id="ecouter" className="text-foreground font-mono flex flex-col gap-4 mb-60 px-4">
+      <TitleH2 title="Ecouter" />
 
       <VerticalTimeline lineColor="#171717" className="pe-0">
         <VerticalTimelineElement
