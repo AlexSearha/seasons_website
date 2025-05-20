@@ -1,7 +1,7 @@
-import { menuLinks } from "@/data/menu-data";
-import Link from "next/link";
+import { menuLinks } from '@/data/menu-data';
+import Link from 'next/link';
 
-const Menu = () => {
+const MenuDesktop = () => {
   return (
     <ul className="relative w-full flex justify-end items-center text-xl font-mono gap-8 h-25 px-6">
       {menuLinks.map((menuLink, index) => {
@@ -20,4 +20,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuDesktop;

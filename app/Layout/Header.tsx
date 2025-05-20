@@ -1,8 +1,11 @@
+'use client';
 import React from 'react';
-import Menu from './Menu';
+import Menu from './MenuDesktop';
 import Button from '../Components/Button';
+import useSizeDetection from '@/hooks/sizeDetect';
 
 const Header = () => {
+  const isMobileWindowsSize = useSizeDetection({});
   return (
     <header id="home" className="h-screen bg-[url(/background_1.webp)] bg-center bg-cover relative">
       <div
