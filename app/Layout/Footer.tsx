@@ -1,4 +1,4 @@
-import ParticulesGeneric from '../Components/ParticulesGenerci';
+import ParticulesGeneric from '../Components/ParticulesGeneric';
 import Socials from '../Components/Socials';
 import { TitleH1 } from '../Components/Titles/Titles';
 const date = new Date();
