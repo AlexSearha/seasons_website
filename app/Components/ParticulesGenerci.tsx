@@ -23,6 +23,7 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
     });
   }, []);
 
+  // @ts-expect-error pour la compile
   const particlesLoaded = (container) => {
     console.log(container);
   };
@@ -522,13 +523,14 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
     }),
     []
   );
-
   if (init) {
     return (
       <Particles
         id="tsparticles"
         className={classname}
+        // @ts-expect-error pour la compile
         particlesLoaded={particlesLoaded}
+        // @ts-expect-error pour la compile
         options={options}
       />
     );
