@@ -5,7 +5,7 @@ import useSizeDetection from '@/hooks/sizeDetect';
 import MenuDesktop from './MenuDesktop';
 import MenuMobile from './MenuMobile';
 import ParagrapheSpace from '../Components/ParagrapheSpace';
-import ParticulesGeneric from '../Components/ParticulesGenerci';
+import ParticulesGeneric from '../Components/ParticulesGeneric';
 
 const Header = () => {
   const isMobileWindowsSize = useSizeDetection({});
