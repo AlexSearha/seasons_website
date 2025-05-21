@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="relative h-auto fhd:h-screen bg-[url('/background_1.webp')] bg-cover bg-center bg-no-repeat flex justify-center"
+      className="relative h-auto fhd:h-screen bg-[url('/background_1.webp')] bg-cover bg-position-[59%,41%] md:bg-center bg-no-repeat flex justify-center"
     >
       <div
         id="bg-overlay"
