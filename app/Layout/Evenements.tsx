@@ -1,7 +1,6 @@
 import { events } from '@/data/events-data';
 import Ticket from '../Components/Tickets/Ticket';
 import moment from 'moment';
-import Image from 'next/image';
 import Button from '../Components/Button';
 import { TitleH2 } from '../Components/Titles/Titles';
 
@@ -13,28 +12,28 @@ const Evenements = () => {
   });
 
   return (
-    <section id="evenements" className="text-foreground flex flex-col gap-4 mb-30">
+    <section id="evenements" className="text-foreground flex flex-col gap-4 mb-30 p-4">
       <div className="flex justify-arround items-center mb-15">
-        <div className="flex justify-evenly items-center w-full">
-          <Image
+        {/* <div className="flex justify-evenly items-center w-full"> */}
+        {/* <Image
             src="/decoration/trompettes.webp"
             alt="trompettes 1871"
             className="drop-shadow-xss drop-shadow-black"
             height={150}
             width={150}
-          />
-          <TitleH2 title="Evenements" />
-          <Image
+          /> */}
+        <TitleH2 title="Evenements" />
+        {/* <Image
             src="/decoration/trompettes.webp"
             alt="trompettes 1871"
             className="drop-shadow-xss drop-shadow-black"
             height={150}
             width={150}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-wrap gap-6 max-w-screen-lg">
+        <div className="flex flex-col items-center hd:flex-wrap hd:flex-row gap-6 max-w-screen-lg">
           {filterEventToCome.length > 0 ? (
             filterEventToCome.map((evenement, i) => <Ticket key={i} {...evenement} />)
           ) : (
