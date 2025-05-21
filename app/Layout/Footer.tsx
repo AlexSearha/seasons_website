@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className="relative flex flex-col justify-center items-center py-20 bg-foreground text-amber-100"
+      className="relative flex flex-col justify-center items-center py-20 bg-foreground text-amber-100 -z-1"
     >
       <ParticulesGeneric />
       <TitleH1 title="Seasons" />

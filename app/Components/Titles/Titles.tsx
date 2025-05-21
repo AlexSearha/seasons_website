@@ -7,7 +7,7 @@ export const TitleH1 = ({ title }: TitleProp) => {
 };
 
 export const TitleH2 = ({ title }: TitleProp) => {
-  return <h2 className="text-5xl md:text-6xl font-title uppercase">{title}</h2>;
+  return <h2 className="text-4xl hd:text-5xl fhd:text-6xl font-title uppercase">{title}</h2>;
 };
 
 export const TitleH3 = ({ title }: TitleProp) => {
