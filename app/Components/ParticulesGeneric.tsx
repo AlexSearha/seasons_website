@@ -39,7 +39,7 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
         position: '',
         repeat: '',
         size: '',
-        opacity: 1,
+        opacity: { min: 1, max: 1 },
       },
       backgroundMask: {
         composite: 'destination-out',
@@ -202,7 +202,7 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
           },
         },
         color: {
-          value: '#fff',
+          value: ['#666666', '#999999', '#ffffff'],
           animation: {
             h: {
               count: 0,
@@ -241,10 +241,8 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
         },
         groups: [],
         move: {
-          angle: {
-            offset: 0,
-            value: 90,
-          },
+          speed: { min: 0.4, max: 1.5 },
+          angle: { min: 0, max: 45 },
           attract: {
             distance: 200,
             enable: false,
@@ -262,7 +260,7 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
           decay: 0,
           distance: {},
           direction: 'bottom',
-          drift: 0,
+
           enable: true,
           gravity: {
             acceleration: 9.81,
@@ -287,12 +285,11 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
           },
           random: false,
           size: false,
-          speed: 2,
           spin: {
             acceleration: 0,
             enable: false,
           },
-          straight: true,
+          straight: false,
           trail: {
             enable: false,
             length: 10,
@@ -311,7 +308,7 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
             mode: 'delete',
             value: 0,
           },
-          value: 1500,
+          value: 2150,
         },
         opacity: {
           value: 1,
@@ -343,10 +340,10 @@ const ParticulesGeneric = ({ classname }: { classname?: string }) => {
           close: true,
           fill: true,
           options: {},
-          type: 'circle',
+          type: 'edge',
         },
         size: {
-          value: 3,
+          value: { min: 0.8, max: 3.2 },
           animation: {
             count: 0,
             enable: false,

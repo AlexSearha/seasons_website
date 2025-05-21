@@ -14,7 +14,10 @@ const Main = () => {
     <div className="relative z-0">
       <Header />
       <main id="main" className="flex justify-center py-15 bg-texture">
-        <div id="main-content" className="max-w-7xl w-full">
+        <div
+          id="main-content"
+          className="md:max-w-4xl hd:max-w-6xl fhd:max-w-7xl 4k:max-w-[130rem] w-full"
+        >
           <Projet />
           <APropos />
           <Ecouter />

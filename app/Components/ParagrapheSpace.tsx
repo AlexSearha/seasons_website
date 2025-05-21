@@ -1,10 +1,5 @@
-type ParagrapheSpaceProp = {
-  /** Height in pixels */
-  height?: number;
-};
-
-const ParagrapheSpace = ({ height = 10 }: ParagrapheSpaceProp) => {
-  return <span style={{ height: `${height}px` }} className="block" />;
+const ParagrapheSpace = () => {
+  return <span className="block h-1 fhd:h-4 2k:h-6 4k:h-8" />;
 };
 
 export default ParagrapheSpace;

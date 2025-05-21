@@ -43,7 +43,7 @@ const Ticket = (eventInfos: eventInfoProps) => {
               id="ticket-content--date"
               className="flex flex-col justify-center items-center text-center  max-w-[150px] shrink font-title text-foreground"
             >
-              <h2>{day}</h2>
+              <h2 className="text-5xl">{day}</h2>
               <p className="font-bold text-2xl">{`${month} ${year}`}</p>
             </div>
             <div

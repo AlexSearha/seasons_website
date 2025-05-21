@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const MenuDesktop = () => {
   return (
-    <ul className="relative w-full flex justify-end items-center text-xl font-mono gap-8 h-25 px-6">
+    <ul className="relative w-full flex justify-end items-center text-lg fhd:text-xl 2k:text-2xl 4k:text-3xl font-mono gap-8 4k:gap-12 h-25 px-6">
       {menuLinks.map((menuLink, index) => {
         return (
           <li key={index} className="uppercase">
