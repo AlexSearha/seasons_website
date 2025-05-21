@@ -24,7 +24,7 @@ export default function Contact() {
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <section id="contact" className="text-foreground font-mono flex flex-col gap-4 mb-30">
+    <section id="contact" className="text-foreground font-mono flex flex-col gap-4 mb-30 px-4">
       <TitleH2 title="Contact" />
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <div className="flex gap-2 justify-between">

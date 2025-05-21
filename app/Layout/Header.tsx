@@ -5,6 +5,7 @@ import useSizeDetection from '@/hooks/sizeDetect';
 import MenuDesktop from './MenuDesktop';
 import MenuMobile from './MenuMobile';
 import ParagrapheSpace from '../Components/ParagrapheSpace';
+import ParticulesGeneric from '../Components/ParticulesGenerci';
 
 const Header = () => {
   const isMobileWindowsSize = useSizeDetection({});
@@ -17,6 +18,7 @@ const Header = () => {
         id="bg-overlay"
         className="absolute top-0 left-0 w-full h-full  bg-gradient-to-b from-black from-5% via-transparent via-85% z-10"
       ></div>
+      <ParticulesGeneric />
       <div className="relative flex flex-col w-full max-w-7xl z-20 mb-15">
         {isMobileWindowsSize ? <MenuMobile /> : <MenuDesktop />}
         <div className="h-title mt-0 md:mt-25 bg-[url(/pattern_old_paper.webp)] bg-clip-text text-transparent bg-cover">
@@ -25,7 +27,7 @@ const Header = () => {
             <h2 className="-mt-6 md:-mt-10 uppercase text-3xl md:text-7xl">
               Les cendres et le sang
             </h2>
-            <p className="bg-black/10 rounded-2xl p-3 text-xl md:text-2xl text-justify font-mono text-amber-100 mt-8">
+            <p className="bg-black/10 rounded-2xl p-3 text-lg md:text-2xl text-justify font-mono text-amber-100 mt-8">
               <span className="text-4xl md:text-5xl">I</span>ci s&apos;élève la voix d&apos;un
               soldat. Un témoin de l&apos;Histoire qui, malgré le camp qu&apos;il avait choisi, a
               perçu les voix de celles et ceux qu&apos;on a voulu faire taire à coups de canons.

@@ -7,7 +7,7 @@ const APropos = () => {
       <TitleH2 title="À propos" />
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-2">
         <div className="md:w-1/2">
-          <p className="font-mono text-2xl text-justify mt-10 md:mt-0">
+          <p className="font-mono text-lg md:text-2xl text-justify mt-10 md:mt-0">
             Après avoir combattu contre les Prussiens, l&apos;armée régulière française doit faire
             face aux insurgés de la Commune qui refusent dune part la capitulation de la France et
             d&apos;autre part rejettent le gouvernement nouvellement élu.{' '}
