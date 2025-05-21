@@ -30,7 +30,7 @@ const Ticket = (eventInfos: eventInfoProps) => {
   return (
     <>
       {singleTicket && (
-        <div className="relative h-auto w-[370px] md:w-[500px] drop-shadow-black/50 drop-shadow-lg overflow-hidden">
+        <div className="relative h-auto w-[340px] md:w-[500px] drop-shadow-black/50 drop-shadow-lg overflow-hidden">
           <Image
             id="ticket-evenement"
             src={singleTicket.url}
